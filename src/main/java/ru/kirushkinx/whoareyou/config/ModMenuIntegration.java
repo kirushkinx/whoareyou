@@ -1,4 +1,4 @@
-package dev.ugamii.whoareyou.config;
+package ru.kirushkinx.whoareyou.config;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;

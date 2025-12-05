@@ -1,7 +1,7 @@
-package dev.ugamii.whoareyou.mixin;
+package ru.kirushkinx.whoareyou.mixin;
 
-import dev.ugamii.whoareyou.config.WhoAreYouConfig;
-import dev.ugamii.whoareyou.util.EntityUtils;
+import ru.kirushkinx.whoareyou.config.WhoAreYouConfig;
+import ru.kirushkinx.whoareyou.util.EntityUtils;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.render.entity.LivingEntityRenderer;

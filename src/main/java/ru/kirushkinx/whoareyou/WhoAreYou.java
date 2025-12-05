@@ -1,7 +1,7 @@
-package dev.ugamii.whoareyou;
+package ru.kirushkinx.whoareyou;
 
 import net.fabricmc.api.ClientModInitializer;
-import dev.ugamii.whoareyou.config.WhoAreYouConfig;
+import ru.kirushkinx.whoareyou.config.WhoAreYouConfig;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -3,25 +3,25 @@
   "id": "whoareyou",
   "version": "${version}",
 
-  "name": "Who are you?",
+  "name": "Who are you? (Updated)",
   "description": "This mod displays your and other players nickname",
   "authors": [
-    "ugamii"
+    "ugamii, kirushkinx"
   ],
   "contact": {
-    "homepage": "https://github.com/ugamii/whoareyou",
-    "issues": "https://github.com/ugamii/whoareyou/issues",
-    "sources": "https://github.com/ugamii/whoareyou"
+    "homepage": "https://github.com/kirushkinx/whoareyou",
+    "issues": "https://github.com/kirushkinx/whoareyou/issues",
+    "sources": "https://github.com/kirushkinx/whoareyou"
   },
 
   "license": "MPL-2.0",
   "icon": "assets/whoareyou/icon.png",
   "entrypoints": {
     "client": [
-      "dev.ugamii.whoareyou.WhoAreYou"
+      "ru.kirushkinx.whoareyou.WhoAreYou"
     ],
     "modmenu": [
-      "dev.ugamii.whoareyou.config.ModMenuIntegration"
+      "ru.kirushkinx.whoareyou.config.ModMenuIntegration"
     ]
   },
 

@@ -1,4 +1,4 @@
-package dev.ugamii.whoareyou.util;
+package ru.kirushkinx.whoareyou.util;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.LivingEntity;
