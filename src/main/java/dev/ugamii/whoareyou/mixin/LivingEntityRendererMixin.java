@@ -22,6 +22,11 @@ public class LivingEntityRendererMixin {
 			return;
 		}
 
+		if (EntityUtils.hasCustomNameTag(entity)) {
+			cir.setReturnValue(false);
+			return;
+		}
+
 		if (WhoAreYouConfig.hideInvisiblePlayersName && entity.isInvisible()) {
 			cir.setReturnValue(false);
 			return;
