@@ -1,5 +1,6 @@
 {
   "whoareyou.config.nameDisplaying": "Вiдображення iменi",
   "whoareyou.config.nameDisplaying.own": "Вiдображати своє iм'я",
-  "whoareyou.config.nameDisplaying.otherPlayers": "Вiдображати iм'я iнших гравцiв"
+  "whoareyou.config.nameDisplaying.otherPlayers": "Вiдображати iм'я iнших гравцiв",
+  "whoareyou.config.nameDisplaying.hideInvisible": "Приховувати імена невидимих гравців"
 }

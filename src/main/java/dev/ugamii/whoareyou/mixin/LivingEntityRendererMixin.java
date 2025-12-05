@@ -22,6 +22,11 @@ public class LivingEntityRendererMixin {
 			return;
 		}
 
+		if (WhoAreYouConfig.hideInvisiblePlayersName && entity.isInvisible()) {
+			cir.setReturnValue(false);
+			return;
+		}
+
 		if (WhoAreYouConfig.enabledOwnName && entity == client.cameraEntity) {
 			cir.setReturnValue(MinecraftClient.isHudEnabled());
 		}

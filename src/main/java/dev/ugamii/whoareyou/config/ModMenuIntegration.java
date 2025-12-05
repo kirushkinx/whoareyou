@@ -36,6 +36,15 @@ public class ModMenuIntegration implements ModMenuApi {
                                 )
                                 .controller(TickBoxControllerBuilder::create)
                                 .build())
+                        .option(Option.<Boolean>createBuilder()
+                                .name(Text.translatable("whoareyou.config.nameDisplaying.hideInvisible"))
+                                .binding(
+                                        WhoAreYouConfig.hideInvisiblePlayersNameDefault,
+                                        () -> WhoAreYouConfig.hideInvisiblePlayersName,
+                                        (value) -> WhoAreYouConfig.hideInvisiblePlayersName = value
+                                )
+                                .controller(TickBoxControllerBuilder::create)
+                                .build())
                         .build())
                 .save(WhoAreYouConfig::save)
                 .build()
