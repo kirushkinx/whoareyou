@@ -1,7 +1,5 @@
 {
   "whoareyou.config.nameDisplaying": "Name displaying",
   "whoareyou.config.nameDisplaying.own": "Display own name",
-  "whoareyou.config.nameDisplaying.otherPlayers": "Display other players name",
-  "whoareyou.config.nameDisplaying.hideInvisible": "Hide invisible player's names"
-
+  "whoareyou.config.nameDisplaying.otherPlayers": "Display other players name"
 }

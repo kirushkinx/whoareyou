@@ -1,25 +1,25 @@
 package ru.kirushkinx.whoareyou.util;
 
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.decoration.ArmorStandEntity;
-import net.minecraft.entity.decoration.DisplayEntity;
+import net.minecraft.client.Minecraft;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.decoration.ArmorStand;
+import net.minecraft.world.entity.Display;
 
 public class EntityUtils {
 
     public static boolean isNPC(LivingEntity entity) {
-        if (!(entity instanceof PlayerEntity player)) {
+        if (!(entity instanceof Player player)) {
             return false;
         }
 
-        MinecraftClient client = MinecraftClient.getInstance();
-        if (client.getNetworkHandler() == null) {
+        Minecraft client = Minecraft.getInstance();
+        if (client.getConnection() == null) {
             return false;
         }
 
-        if (client.getNetworkHandler().getPlayerListEntry(player.getUuid()) == null) {
+        if (client.getConnection().getPlayerInfo(player.getUUID()) == null) {
             return true;
         }
 
@@ -28,9 +28,9 @@ public class EntityUtils {
     }
 
     public static boolean hasCustomNameTag(LivingEntity entity) {
-        if (entity.hasPassengers()) {
-            for (Entity passenger : entity.getPassengerList()) {
-                if (passenger instanceof ArmorStandEntity || passenger instanceof DisplayEntity) {
+        if (entity.isVehicle()) {
+            for (Entity passenger : entity.getPassengers()) {
+                if (passenger instanceof ArmorStand || passenger instanceof Display) {
                     return true;
                 }
             }
